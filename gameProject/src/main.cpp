@@ -58,7 +58,7 @@ int main(){
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
 
 	// Copy the vertex array to the GL_ARRAY_BUFFER for rendering on the gpu
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(triVertices), triVertices, GL_STATIC_DRAW);
 
 	// gl buffer data is a special function that is used to copy user defined data 
 	// into the currently bound buffer. The last parameter tells the gpu what to do
