@@ -1,0 +1,90 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "BuildCurrent",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				
+				"-fdiagnostics-color=always",
+				"-I",
+				"${workspaceFolder}\\include\\Eigen3\\Eigen3",
+				"-I",
+				"${workspaceFolder}\\lib",
+				"-g",
+				"${workspaceFolder}\\src\\**.cpp",
+				"${workspaceFolder}\\src\\**.h",
+				"${workspaceFolder}\\lib\\PAM\\**.cpp",
+				"${workspaceFolder}\\lib\\Engine\\**.cpp",
+				"-o",
+				"${workspaceFolder}\\bin\\myRT.exe",
+				"-Wall"
+				
+				
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "cppbuild",
+			"label": "Build Engine Lib",
+			"command": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+			"args": [
+				
+				"-fdiagnostics-color=always",
+				"-I",
+				"${workspaceFolder}\\include\\Eigen3\\Eigen3",
+				"-g",
+				"${workspaceFolder}\\src\\**.cpp",
+				"${workspaceFolder}\\src\\**.h",
+				"-o",
+				"${workspaceFolder}\\bin\\myRT.exe",
+				"-Wall"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: \"C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe\""
+		},
+		{
+			"type": "shell",
+			"label": "Run Basic Test",
+			"command": "${workspaceFolder}\\bin\\myRT.exe 2",
+			"problemMatcher": [],
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "Build and Run Test",
+			"command": "${workspaceFolder}\\bin\\myRT.exe 2",
+			"dependsOn": [
+				"BuildCurrent"
+			],
+			"problemMatcher": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
