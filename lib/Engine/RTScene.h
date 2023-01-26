@@ -37,6 +37,10 @@ private:
 
     // Width/height of our rasterData 
     uint16_t width,height;
+
+    // Aspect Ratio
+    double aspectRatio;
+
     double to,bo,le,ri;
     
     
@@ -67,7 +71,9 @@ public:
     // 
     void GenViewRay(Ray &r, const int i, const int j);
 
-    
+    double getAspectRatio(){
+        return aspectRatio;
+    }
 
 
 

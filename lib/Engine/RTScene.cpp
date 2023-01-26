@@ -36,6 +36,7 @@ RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16
     camera  = c; 
     height = h;
     width = w;
+    aspectRatio = (double)width/(double)height;
     // ri = camera.width;
     // to = camera.height;`
     // le = -ri;
@@ -161,12 +162,16 @@ bool RTScene::GetFirstHit(Ray &r, const double &minT, double &tValue, int &hO){
 void RTScene::GenViewRay(Ray &r, const int j, const int i){
     // std::cout << ri << le << to << bo <<std::endl;
     // std::cout << camera.width << std::endl; 
-    double Su =  camera.width*(j+0.5)/width  - (camera.width/2.0);  // le+((ri - le)*(j+0.5))/  camera.width;
-    // //
-    double Sv = camera.height*(i+0.5)/height - (camera.height/2.0); //bo+((to - bo)*(i+0.5))/camera.height; // // 
+    // A Big thank you to https://www.scratchapixel.com/lessons/3d-basic-rendering/ray-tracing-generating-camera-rays/generating-camera-rays.html
+    // For helping me correct the fov/camera positioning issue
+    // double Su =  (camera.width*(j+0.5)/width  - (camera.width/2.0)*aspectRatio);  // le+((ri - le)*(j+0.5))/  camera.width;
+    double Su =  (2*((j+0.5)/width)-1)*aspectRatio;
+    //double Sv = camera.height*(i+0.5)/height - (camera.height/2.0); //bo+((to - bo)*(i+0.5))/camera.height; // // 
+    double Sv =  (2*((i+0.5)/height)-1);
     double Sw = -camera.fd;
-    r.direction =  (Su*camera.u + -Sv*camera.v  + Sw*camera.w);
-    r.direction -= camera.Eye;
+    r.direction =  (Su*camera.u - Sv*camera.v  + Sw*camera.w);
+    r.direction.normalize();
+    //r.direction -= camera.Eye;
     r.origin = camera.Eye;
 }
 

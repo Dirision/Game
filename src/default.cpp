@@ -55,34 +55,38 @@ int defaultRT(){
     std::cout << "Generating Sample Raytraced Scene\n";
     
     Camera camera;
-    camera.Eye  << 0,0,0;
+    camera.Eye  << 0,1,3;
     camera.u    << 1,0,0;
     camera.v    << 0,1,0;
     camera.w    << 0,0,-1;
     // Think of height/width as how much we are scaling the final image
     camera.width = 1.0;
     camera.height = 1.0;
-    camera.fd = 2.0;
-    
+    camera.fd = 1;
+    camera.fov = 90;
     std::vector<std::shared_ptr<Object>> objects;
-    Eigen::Vector3d p(0,0,10);
+    Eigen::Vector3d p(0,2,10);
     std::shared_ptr<Material> m(new Material);
     m->rgb = RGB(200,20,20);
-    std::shared_ptr<Shape::Sphere> s(new Shape::Sphere(p,0.5,m));
+    std::shared_ptr<Shape::Sphere> s(new Shape::Sphere(p,2,m));
 
-    Eigen::Vector3d a(0,1,8);
-    Eigen::Vector3d b(-0.3,0.5,7);
-    Eigen::Vector3d c(0.3,0.5,7);
+    Eigen::Vector3d a(6,6,8);
+    Eigen::Vector3d b(3,4,7);
+    Eigen::Vector3d c(9,4,7);
     std::shared_ptr<Shape::Triangle>  t(new Shape::Triangle(a,b,c));
+    
+    Eigen::Vector3d o(0,0,0);
+    Eigen::Vector3d n(0,1,0);
+    std::shared_ptr<Shape::Plane> pl(new Shape::Plane(o,n));
 
     // objects.insert(1,s);
     objects.push_back(s);
     objects.push_back(t);
-    
-    RTScene scene = RTScene(objects,camera,200,200);
+    objects.push_back(pl);
+
+    RTScene scene = RTScene(objects,camera,400,680);
     
     uint16_t width,height;
-    
     // const Eigen::Matrix<uint8_t,Eigen::Dynamic,Eigen::Dynamic,Eigen::RowMajor> data = scene.GetRaster(width,height);
     // const auto data = scene.GetRaster(width,height);
     

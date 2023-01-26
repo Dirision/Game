@@ -14,6 +14,8 @@ struct Camera{
     // Focal Distance
     double fd;
     
+    double fov;
+
     // Width & height of the view plane. Recall l,r,t,d as the edges 
     double width, height;
 };

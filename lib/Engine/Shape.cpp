@@ -44,12 +44,11 @@ bool Shape::Sphere::intersect(const Ray &r, double &  t, Eigen::Vector3d &n){
     return false;
 };
  
-void Shape::Sphere::setMaterial(Material m){
-    //material = m;
+void Shape::Sphere::setMaterial(std::shared_ptr<Material> m){
+    material = m;
 }
 RGB& Shape::Sphere::getMaterialColor(){
-   std::cout << "Circle!\n";
-   return material->rgb;
+    return material->rgb;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -86,10 +85,41 @@ bool Shape::Triangle::intersect(const Ray &r, double &t, Eigen::Vector3d &n){
     // std::cout << "HIT!!!\n";
     return true;
 };
-void Shape::Triangle::setMaterial(Material m){  
+void Shape::Triangle::setMaterial(std::shared_ptr<Material> m){  
     //material = m;
 };
 RGB& Shape::Triangle::getMaterialColor(){
-    std::cout << "Triangle!\n";
+    return material->rgb;
+};
+
+
+Shape::Plane::Plane(Eigen::Vector3d P, Eigen::Vector3d N){
+    p = P;
+    n = N;
+    std::shared_ptr<Material> m(new Material);
+    m->rgb = RGB(50,255,50);
+    material = m;
+};
+Shape::Plane::Plane(Eigen::Vector3d P, Eigen::Vector3d N,std::shared_ptr<Material> m){
+    p = P;
+    n = N;
+    material = m;
+};
+bool Shape::Plane::intersect(const Ray &r, double &t, Eigen::Vector3d &N){
+    double d = r.direction.dot(n);
+    // std::cout << "d: "<< d << " ";
+    if (d == 0){return false;}
+    double T = (p - r.origin).dot(n)/d;
+    if (T < 0){return false;}
+    N = n; 
+    t = T;
+    // std::cout << t << std::endl;
+    return true;
+};
+void Shape::Plane::setMaterial(std::shared_ptr<Material> m){
+    material = m;  
+};
+
+RGB& Shape::Plane::getMaterialColor(){
     return material->rgb;
 };

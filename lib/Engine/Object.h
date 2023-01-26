@@ -21,7 +21,7 @@ class Object{
         // Eigen::Vector3d n -> Surface normal calculated at point of intersection
         virtual bool intersect(const Ray &r, double &t, Eigen::Vector3d &n);
 
-        virtual void                    setMaterial(Material m);
+        virtual void                    setMaterial(std::shared_ptr<Material> m);
         virtual RGB&                    getMaterialColor();
 };
 
