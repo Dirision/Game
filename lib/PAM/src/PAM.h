@@ -4,6 +4,11 @@
 #include <vector>
 #include <Eigen\Dense>
 
+/**
+ * PBM : Black and white via 0 - 1
+ * PGM : Greyscale image, intensity is specified as 0 <= Limit <= 65536
+ * PPM : RGB image. values are represented as tuples of 3 | r,g,b <= 255
+ */
 
 int writeFile(std::string name,std::string content);
 

@@ -1,4 +1,4 @@
-#include "PAM\PAM.h"
+#include "PAM.h"
 #include <string>
 #include <Eigen\Dense>
 #include <iostream>

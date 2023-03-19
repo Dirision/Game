@@ -1,10 +1,10 @@
 #include <iostream>
 #include <fstream>
 #include <Eigen\Dense>
-#include <PAM\PAM.h>
+#include <PAM.h>
 // #include <Engine\RTScene.h>
 // #include <Engine\Camera.h>
-#include <Engine\Base.h>
+#include <Base.h>
 
 #include <ctime>
 

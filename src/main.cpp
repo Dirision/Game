@@ -1,23 +1,19 @@
 #include <iostream>
 #include "default.h"
 
-/**
- * PBM : Black and white via 0 - 1
- * PGM : Greyscale image, intensity is specified as 0 <= Limit <= 65536
- * PPM : RGB image. values are represented as tuples of 3 | r,g,b <= 255
- */
+
 
 
 /**
  * TODO:
  * - Fix help section
- * - Finish section 3 
- * - Implement Scene 
- * - Implement Shapes
- * - Implement outputting to ppm 
+ * - Check Engine/RTScene.h for more TODO
+ * 
  * 
  * -FUTURE TODO:
- * - Implement rendering to win32 window: https://www.youtube.com/watch?v=vEFpaJdKcYU
+ * - OGL Integration
+ * - Implement rendering to win32 window: https://www.youtube.com/watch?v=vEFpaJdKcYU (only
+ *      if going for an old look/learning experience)
  * - 
  * 
 */
@@ -64,4 +60,5 @@ int main(int argc, char **argv){
 
     std::cout << "Finished\n";
     return 0;
+    
 }

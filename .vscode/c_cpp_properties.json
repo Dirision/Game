@@ -5,10 +5,10 @@
             "includePath": [
                 "${workspaceFolder}/include/Eigen3/**",
                 "${workspaceFolder}/include/Eigen3/Eigen3",
-                "${workspaceFolder}/include/Eigen3/Eigen3",
-                "${workspaceFolder}/lib/PAM",
-                "${workspaceFolder}/lib",
-                "${workspaceFolder}/lib"
+                "${workspaceFolder}/lib/PAM/**",
+                "${workspaceFolder}/lib/**",
+                "${workspaceFolder}/lib/Engine/src",
+                "lib\\Engine\\src"
             ],
             "defines": [
                 "_DEBUG",

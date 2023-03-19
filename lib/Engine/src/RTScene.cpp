@@ -12,9 +12,6 @@
 // Texture/Texture Mapping for materials 
 // Render Pipeline 
 
-
-
-
 #include <iostream>
 
 #include <stdlib.h>

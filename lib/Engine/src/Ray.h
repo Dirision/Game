@@ -1,7 +1,6 @@
 #ifndef RAY_H
 #define RAY_H
 
-#pragma once
 #include <Eigen/Core>
 
 struct Ray{

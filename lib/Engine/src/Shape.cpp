@@ -23,19 +23,19 @@ Shape::Sphere::Sphere(Eigen::Vector3d &c,double r,std::shared_ptr<Material> &m){
 }
 
 bool Shape::Sphere::intersect(const Ray &r, double &  t, Eigen::Vector3d &n){
-    Eigen::Vector3d ec = r.origin - center;
-    double bottom = r.direction.dot(r.direction);
-    double B =          r.direction.dot(ec);
-    double c =          ec.dot(ec)-radius*radius;
-    double discrim =    (B*B)-(bottom*c);
+    Eigen::Vector3d ec  = r.origin - center;
+    double bottom       = r.direction.dot(r.direction);
+    double B            = r.direction.dot(ec);
+    double c            = ec.dot(ec)-radius*radius;
+    double discrim      = (B*B)-(bottom*c);
     if (discrim < 0) return false;
     if (discrim == 0){
-        t = -B/bottom;
-        n = 2*(ec + t*r.direction);
+        t               = -B/bottom;
+        n               = 2*(ec + t*r.direction);
         return true; 
     } else { 
-        double tA = std::abs((-B - sqrt(discrim))/bottom);
-        double tB = (-B + sqrt(discrim))/bottom;
+        double tA       = std::abs((-B - sqrt(discrim))/bottom);
+        double tB       = (-B + sqrt(discrim))/bottom;
         tA <= tB ? t = tA : t = tB;
         n = 2*(ec + t*r.direction);
         return true; 
@@ -76,8 +76,6 @@ bool Shape::Triangle::intersect(const Ray &r, double &t, Eigen::Vector3d &n){
     Eigen::Matrix3d B;
     B << ae,ac,r.direction;
     double b = B.determinant()/a;
-    //std::cout << y << " ";
-    //std::cout << b << std::endl;
     if (b < 0 || b > 1-y) return false;
     Eigen::Matrix3d T;
     T << ab,ac,ae;

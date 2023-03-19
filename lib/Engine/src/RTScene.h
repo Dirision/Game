@@ -1,11 +1,12 @@
-// (Ray Trace Scene) RTScenes will have:
+/** (Ray Trace Scene) RTScenes will have:
 // TODO: IMPLEMENT EACH
-// collection of objects                                (NOT IMPLEMENTED)
-// a camera                                             (NOT IMPLEMENTED)
+// collection of objects                                (IMPLEMENTED)
+// a camera                                             (IMPLEMENTED)
 // light sources                                        (NOT IMPLEMENTED) 
-// A raster for output/display(can dump raster to PPM)  (NOT IMPLEMENTED) 
-// an update function to update the raster              (NOT IMPLEMENTED)
-
+// Color Models                                         (NOT IMPLEMENTED)
+// A raster for output/display(can dump raster to PPM)  (IMPLEMENTED) 
+// an update function to update the raster              (IMPLEMENTED)
+*/
 #ifndef RTSCENE_H
 #define RTSCENE_H
 
