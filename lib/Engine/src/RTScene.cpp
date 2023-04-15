@@ -23,7 +23,7 @@
 #include "Object.h"
 #include "Camera.h"
 #include "Ray.h"
-
+#include "Light.h"
 
 
 // 

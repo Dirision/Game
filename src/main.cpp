@@ -21,8 +21,8 @@
 
 int main(int argc, char **argv){
     using namespace std;
-    defaultRT();
-    argc=5;
+    // defaultRT();
+    // argc=5;
     if (argc == 1){
         cout << "USAGE: .\\myRT <mode> [options] \n";
         cout << "MODES:\n1: Raster PGM [PathOfPgmtoProcess]\n";

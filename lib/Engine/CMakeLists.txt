@@ -47,3 +47,8 @@ file(GLOB ENGINE_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp")
 
 # Tells cmake that we want to build a library
 add_library(Engine SHARED ${ENGINE_SOURCE})
+
+# add a debug lib
+#file(GLOB ENGINE_DEBUG_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp" "./srcDbg/*.h")
+#add_library(Engine_debug SHARED ${ENGINE_DEBUG_SOURCE})
+
