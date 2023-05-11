@@ -44,6 +44,8 @@ find_package(Eigen3 3.3 REQUIRED)
 set(EXE_NAME "Game${BUILD_SUFFIX}")
 file(GLOB GAME_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp")
 
+add_compile_options("$<$<NOT:$<CONFIG:RELEASE>>:-DDEBUG>")
+
 add_executable(${EXE_NAME} ${GAME_SOURCE})
 # Add Engine
 target_include_directories(${EXE_NAME}  PUBLIC "${ENGINE_LIB_PATH}/src"

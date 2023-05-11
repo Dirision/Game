@@ -45,6 +45,9 @@ find_package(Eigen3 3.3 REQUIRED)
 
 file(GLOB ENGINE_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp")
 
+# Add debug flag to compiler if we are creating debug build (I.e. set define for src)
+add_compile_options("$<$<NOT:$<CONFIG:RELEASE>>:-DDEBUG>")
+
 # Tells cmake that we want to build a library
 add_library(Engine SHARED ${ENGINE_SOURCE})
 

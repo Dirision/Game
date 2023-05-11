@@ -1,12 +1,10 @@
 #include <Eigen/Dense>
+#include <iostream>
+
 #include "Object.h"
 #include "Ray.h"
 #include "Shape.h"
 #include "Material.h"
-
-#include <iostream>
-
-
 
 Shape::Sphere::Sphere(Eigen::Vector3d &c,double r){
     center = c; 

@@ -1,6 +1,7 @@
 #include <iostream>
-#include "default.h"
 
+#include "default.h"
+#include "DebugFunction.h"
 
 
 
@@ -21,6 +22,7 @@
 
 int main(int argc, char **argv){
     using namespace std;
+    DBGPrint(std::string("DEBUGGING IS ENABLED!"));
     // defaultRT();
     // argc=5;
     if (argc == 1){

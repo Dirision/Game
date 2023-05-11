@@ -1,0 +1,9 @@
+C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/Game.dir
+C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/edit_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/rebuild_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/Engine/CMakeFiles/Engine.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/Engine/CMakeFiles/edit_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/Engine/CMakeFiles/rebuild_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/PAM/CMakeFiles/rebuild_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/PAM/CMakeFiles/PAM.dir
+C:/Users/dirision/Documents/GitHub/Game/build/lib/PAM/CMakeFiles/edit_cache.dir

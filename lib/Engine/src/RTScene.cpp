@@ -25,6 +25,9 @@
 #include "Ray.h"
 #include "Light.h"
 
+#ifdef DEBUG_FLAGS 
+    #include "DebugFlags.h"
+#endif
 
 // 
 RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16_t h, const uint16_t w)

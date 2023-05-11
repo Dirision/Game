@@ -7,6 +7,8 @@
 
 class Light{
     public: 
+        // Represents some positional/directional property of the light. 
+        // typically used when getting Ld. 
         Eigen::Vector3d L; 
         RGB intensity; 
         std::string tag; 
