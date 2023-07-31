@@ -63,12 +63,12 @@ int main(int argc, char **argv){
             }
             break;
         default:
-            cout << "Unknown";
+            cout << "Unknown Case Selected\n";
             break;
         }
     }
     
-
+    DBGPrint(std::string("DBG: Finished"));
     std::cout << "Finished\n";
     return 0;
     

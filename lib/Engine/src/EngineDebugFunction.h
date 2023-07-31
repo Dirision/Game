@@ -1,4 +1,5 @@
-#pragma once
+#ifndef ENGINEDEBUGFUNCTION_H
+#define ENGINEDEBUGFUNCTION_H
 #ifdef DEBUG
 
 #include <string>
@@ -6,21 +7,13 @@
 #include <ctime>
 
 
-void DBGPrint(std::string s){
-
-    std::time_t t = std::time(0);
-    std::cout <<  std::localtime(&t)->tm_hour << ":"
-    << std::localtime(&t)->tm_min
-    << ": "
-    << s
-    << std::endl;
-}
+void DBGPrint(std::string s);
 
 #else
 
 void DBGPrint(...){
 
 }
-
+#endif
 #endif
 

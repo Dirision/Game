@@ -8,7 +8,8 @@
                 "${workspaceFolder}/lib/PAM/**",
                 "${workspaceFolder}/lib/**",
                 "${workspaceFolder}/lib/Engine/src",
-                "lib\\Engine\\src"
+                "lib\\Engine\\src",
+                "${workspaceFolder}/lib/Engine/include/json/single_include"
             ],
             "defines": [
                 "_DEBUG",

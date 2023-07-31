@@ -60,6 +60,7 @@ public:
     RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w, std::string name);
     RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w): 
         RTScene(o,c,h,w, "NoName!"){};
+    RTScene();
     // update Raster matrix basesd on interactions between self camera & objects
     int Update();
 

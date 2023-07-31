@@ -1,5 +1,16 @@
 
-#include "default.h"
+#include <iostream>
+#include <fstream>
+#include <Eigen\Dense>
+#include <PAM.h>
+// #include <Engine\RTScene.h>
+// #include <Engine\Camera.h>
+#include <Base.h>
+
+#include <string>
+#include <ctime>
+
+#include "EngineDebugFunction.h"
 
 
 #define PGM_FILE ".\\assets\\HiPgm.pgm"

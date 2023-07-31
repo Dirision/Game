@@ -25,10 +25,9 @@
 #include "Ray.h"
 #include "Light.h"
 
-#include "EngineDebugFunction.h"
-// #ifdef DEBUG_FLAGS 
-//     #include "DebugFlags.h"
-// #endif
+#ifdef DEBUG_FLAGS 
+    #include "DebugFlags.h"
+#endif
 
 // // 
 // RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16_t h, const uint16_t w)
@@ -69,6 +68,8 @@ RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_
     rasterData.resize(height,width*3);
     rasterData.setZero();   
 }
+
+RTScene::RTScene(){};
 
 RTScene::~RTScene()
 {
