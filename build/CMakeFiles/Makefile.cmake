@@ -29,6 +29,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/WindowsPaths.cmake"
   "../CMakeLists.txt"
+  "../assets/sampleScene.json"
   "CMakeFiles/3.13.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.3/CMakeRCCompiler.cmake"
@@ -50,6 +51,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "sampleScene.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/Engine/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/PAM/CMakeFiles/CMakeDirectoryInformation.cmake"

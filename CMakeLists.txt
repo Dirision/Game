@@ -5,7 +5,7 @@ project(GameProject DESCRIPTION "My game engine used in a project")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 set(ENGINE_LIB_PATH "${CMAKE_CURRENT_LIST_DIR}/lib/Engine")
 set(PAM_LIB_PATH "${CMAKE_CURRENT_LIST_DIR}/lib/PAM")
-
+set(ASSETS_PATH "${CMAKE_CURRENT_LIST_DIR}/assets")
 if    ($(CMAKE_BUILD_TYPE) EQUAL "Debug"  )
     set(ENGINE_LIB_BUILD_PATH "${ENGINE_LIB_PATH}/build/Debug")
     set(BUILD_SUFFIX "_dbg")
@@ -44,10 +44,15 @@ find_package(Eigen3 3.3 REQUIRED)
 set(EXE_NAME "Game${BUILD_SUFFIX}")
 file(GLOB GAME_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp")
 
+# For builds that are not release (I.e. debug builds) we add a debug flag 
+# to the compile line (so that we can access "DEBUG" definition in the code!)
 add_compile_options("$<$<NOT:$<CONFIG:RELEASE>>:-DDEBUG>")
 
+# We will copy the sample json from our assets folder to the build directory. 
+configure_file("${ASSETS_PATH}/sampleScene.json" "${CMAKE_CURRENT_BINARY_DIR}" COPYONLY)
+
 add_executable(${EXE_NAME} ${GAME_SOURCE})
-# Add Engine
+# Add Engine and PAM libs
 target_include_directories(${EXE_NAME}  PUBLIC "${ENGINE_LIB_PATH}/src"
                                         PUBLIC "${PAM_LIB_PATH}/src)")
 target_link_directories(${EXE_NAME} PUBLIC "${ENGINE_LIB_PATH}/src"

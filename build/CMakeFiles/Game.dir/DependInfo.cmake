@@ -5,7 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/dirision/Documents/GitHub/Game/src/default.cpp" "C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/Game.dir/src/default.cpp.obj"
-  "C:/Users/dirision/Documents/GitHub/Game/src/main.cpp" "C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/Game.dir/src/main.cpp.obj"
+  "C:/Users/dirision/Documents/GitHub/Game/src/game.cpp" "C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/Game.dir/src/game.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

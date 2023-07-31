@@ -7,15 +7,16 @@
 Light::~Light(){};
 void Light::getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s){};
 
+
 DirectionalLight::DirectionalLight(Eigen::Vector3d &l, RGB &i){
     L = l;
     intensity = i; 
-    tag = "";
+    Tag = "";
 }
-DirectionalLight::DirectionalLight(Eigen::Vector3d &l, RGB &i, char &s){
+DirectionalLight::DirectionalLight(Eigen::Vector3d &l, RGB &i, char &tag){
     L = l;
     intensity = i; 
-    tag = s;
+    Tag = tag;
 }
 void DirectionalLight::getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s){
     // recall: L is from our lightsource into the scene, therefore, ld will be the negative of L
@@ -24,3 +25,16 @@ void DirectionalLight::getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, doubl
     // intersection point does not matter for this light
     s = std::numeric_limits<double>::max();
 }
+
+PointLight::PointLight(Eigen::Vector3d &l, RGB &i){
+    L = l;
+    intensity = i;
+}
+PointLight::PointLight(Eigen::Vector3d &l, RGB &i, char &s){
+
+}
+
+// Recall that p Must be a point in world space
+void PointLight::getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s){
+    Ld = (p - L).normalized();
+};

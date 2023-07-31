@@ -19,7 +19,7 @@ CMAKE_AR:FILEPATH=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/m
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -250,6 +250,9 @@ PAM_BINARY_DIR:STATIC=C:/Users/dirision/Documents/GitHub/Game/build/lib/PAM
 
 //Value Computed by CMake
 PAM_SOURCE_DIR:STATIC=C:/Users/dirision/Documents/GitHub/Game/lib/PAM
+
+//The directory containing a CMake configuration file for nlohmann_json.
+nlohmann_json_DIR:PATH=nlohmann_json_DIR-NOTFOUND
 
 
 ########################

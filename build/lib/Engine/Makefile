@@ -125,32 +125,32 @@ Engine/fast:
 	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/build
 .PHONY : Engine/fast
 
-src/DebugFunction.obj: src/DebugFunction.cpp.obj
+src/EngineDebugFunction.obj: src/EngineDebugFunction.cpp.obj
 
-.PHONY : src/DebugFunction.obj
+.PHONY : src/EngineDebugFunction.obj
 
 # target to build an object file
-src/DebugFunction.cpp.obj:
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj
-.PHONY : src/DebugFunction.cpp.obj
+src/EngineDebugFunction.cpp.obj:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj
+.PHONY : src/EngineDebugFunction.cpp.obj
 
-src/DebugFunction.i: src/DebugFunction.cpp.i
+src/EngineDebugFunction.i: src/EngineDebugFunction.cpp.i
 
-.PHONY : src/DebugFunction.i
+.PHONY : src/EngineDebugFunction.i
 
 # target to preprocess a source file
-src/DebugFunction.cpp.i:
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.i
-.PHONY : src/DebugFunction.cpp.i
+src/EngineDebugFunction.cpp.i:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.i
+.PHONY : src/EngineDebugFunction.cpp.i
 
-src/DebugFunction.s: src/DebugFunction.cpp.s
+src/EngineDebugFunction.s: src/EngineDebugFunction.cpp.s
 
-.PHONY : src/DebugFunction.s
+.PHONY : src/EngineDebugFunction.s
 
 # target to generate assembly for a file
-src/DebugFunction.cpp.s:
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.s
-.PHONY : src/DebugFunction.cpp.s
+src/EngineDebugFunction.cpp.s:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.s
+.PHONY : src/EngineDebugFunction.cpp.s
 
 src/Light.obj: src/Light.cpp.obj
 
@@ -233,6 +233,33 @@ src/RTScene.cpp.s:
 	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/RTScene.cpp.s
 .PHONY : src/RTScene.cpp.s
 
+src/SceneBuilder.obj: src/SceneBuilder.cpp.obj
+
+.PHONY : src/SceneBuilder.obj
+
+# target to build an object file
+src/SceneBuilder.cpp.obj:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj
+.PHONY : src/SceneBuilder.cpp.obj
+
+src/SceneBuilder.i: src/SceneBuilder.cpp.i
+
+.PHONY : src/SceneBuilder.i
+
+# target to preprocess a source file
+src/SceneBuilder.cpp.i:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.i
+.PHONY : src/SceneBuilder.cpp.i
+
+src/SceneBuilder.s: src/SceneBuilder.cpp.s
+
+.PHONY : src/SceneBuilder.s
+
+# target to generate assembly for a file
+src/SceneBuilder.cpp.s:
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build && $(MAKE) -f lib\Engine\CMakeFiles\Engine.dir\build.make lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.s
+.PHONY : src/SceneBuilder.cpp.s
+
 src/Shape.obj: src/Shape.cpp.obj
 
 .PHONY : src/Shape.obj
@@ -269,9 +296,9 @@ help:
 	@echo ... Engine
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... src/DebugFunction.obj
-	@echo ... src/DebugFunction.i
-	@echo ... src/DebugFunction.s
+	@echo ... src/EngineDebugFunction.obj
+	@echo ... src/EngineDebugFunction.i
+	@echo ... src/EngineDebugFunction.s
 	@echo ... src/Light.obj
 	@echo ... src/Light.i
 	@echo ... src/Light.s
@@ -281,6 +308,9 @@ help:
 	@echo ... src/RTScene.obj
 	@echo ... src/RTScene.i
 	@echo ... src/RTScene.s
+	@echo ... src/SceneBuilder.obj
+	@echo ... src/SceneBuilder.i
+	@echo ... src/SceneBuilder.s
 	@echo ... src/Shape.obj
 	@echo ... src/Shape.i
 	@echo ... src/Shape.s

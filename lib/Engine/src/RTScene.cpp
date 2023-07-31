@@ -25,18 +25,38 @@
 #include "Ray.h"
 #include "Light.h"
 
-#ifdef DEBUG_FLAGS 
-    #include "DebugFlags.h"
-#endif
+#include "EngineDebugFunction.h"
+// #ifdef DEBUG_FLAGS 
+//     #include "DebugFlags.h"
+// #endif
 
-// 
-RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16_t h, const uint16_t w)
-{
-    objects = o;
-    camera  = c; 
-    height = h;
-    width = w;
-    aspectRatio = (double)width/(double)height;
+// // 
+// RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16_t h, const uint16_t w)
+// {
+//     objects = o;
+//     camera  = c; 
+//     height = h;
+//     width = w;
+//     aspectRatio = (double)width/(double)height;
+//     // ri = camera.width;
+//     // to = camera.height;`
+//     // le = -ri;
+//     // bo = -to;
+//     // // raster matrix is just a continous block of memory dedicated to storing 
+//     // the output pixel data
+//     // the size of the raster is 3*width*height of the scene. W/H need to be 
+//     // declared at some point, resize functions should be implemented to change
+//     // the scene's raster matrix size. 
+//     rasterData.resize(height,width*3);
+//     rasterData.setZero();
+//}
+RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w, std::string name){
+    Name            = name;
+    objects         = o;
+    camera          = c; 
+    height          = h;
+    width           = w;
+    aspectRatio     = (double)width/(double)height;
     // ri = camera.width;
     // to = camera.height;`
     // le = -ri;
@@ -47,7 +67,7 @@ RTScene::RTScene(std::vector<std::shared_ptr<Object>> &o, Camera &c,const uint16
     // declared at some point, resize functions should be implemented to change
     // the scene's raster matrix size. 
     rasterData.resize(height,width*3);
-    rasterData.setZero();
+    rasterData.setZero();   
 }
 
 RTScene::~RTScene()

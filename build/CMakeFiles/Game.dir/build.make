@@ -70,30 +70,30 @@ CMakeFiles/Game.dir/src/default.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/default.cpp.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\src\default.cpp -o CMakeFiles\Game.dir\src\default.cpp.s
 
-CMakeFiles/Game.dir/src/main.cpp.obj: CMakeFiles/Game.dir/flags.make
-CMakeFiles/Game.dir/src/main.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
-CMakeFiles/Game.dir/src/main.cpp.obj: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/src/main.cpp.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Game.dir\src\main.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\src\main.cpp
+CMakeFiles/Game.dir/src/game.cpp.obj: CMakeFiles/Game.dir/flags.make
+CMakeFiles/Game.dir/src/game.cpp.obj: CMakeFiles/Game.dir/includes_CXX.rsp
+CMakeFiles/Game.dir/src/game.cpp.obj: ../src/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Game.dir/src/game.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Game.dir\src\game.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\src\game.cpp
 
-CMakeFiles/Game.dir/src/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/main.cpp.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dirision\Documents\GitHub\Game\src\main.cpp > CMakeFiles\Game.dir\src\main.cpp.i
+CMakeFiles/Game.dir/src/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Game.dir/src/game.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dirision\Documents\GitHub\Game\src\game.cpp > CMakeFiles\Game.dir\src\game.cpp.i
 
-CMakeFiles/Game.dir/src/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/main.cpp.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\src\main.cpp -o CMakeFiles\Game.dir\src\main.cpp.s
+CMakeFiles/Game.dir/src/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Game.dir/src/game.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\src\game.cpp -o CMakeFiles\Game.dir\src\game.cpp.s
 
 # Object files for target Game
 Game_OBJECTS = \
 "CMakeFiles/Game.dir/src/default.cpp.obj" \
-"CMakeFiles/Game.dir/src/main.cpp.obj"
+"CMakeFiles/Game.dir/src/game.cpp.obj"
 
 # External object files for target Game
 Game_EXTERNAL_OBJECTS =
 
 Game.exe: CMakeFiles/Game.dir/src/default.cpp.obj
-Game.exe: CMakeFiles/Game.dir/src/main.cpp.obj
+Game.exe: CMakeFiles/Game.dir/src/game.cpp.obj
 Game.exe: CMakeFiles/Game.dir/build.make
 Game.exe: lib/Engine/libEngine.dll.a
 Game.exe: lib/PAM/libPAM.dll.a

@@ -11,7 +11,7 @@ class Light{
         // typically used when getting Ld. 
         Eigen::Vector3d L; 
         RGB intensity; 
-        std::string tag; 
+        std::string Tag; 
         virtual ~Light();
         // get the direction for this light and point p (from p -> Ld), and s units along li.
         virtual void getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s);
@@ -27,14 +27,16 @@ class AmbientLight {
 
 class DirectionalLight : public Light{
     DirectionalLight(Eigen::Vector3d &l, RGB &i);
-    DirectionalLight(Eigen::Vector3d &l, RGB &i, char &s);
+    DirectionalLight(Eigen::Vector3d &l, RGB &i, char &tag);
     void getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s);
 
 };
 
 // TODO: Implement
-class PointLight{
-
+class PointLight : public Light{
+    PointLight(Eigen::Vector3d &l, RGB &i);
+    PointLight(Eigen::Vector3d &l, RGB &i, char &s);
+    void getLd(const Eigen::Vector3d p, Eigen::Vector3d &Ld, double &s);
 };
 
 #endif

@@ -1,14 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <Eigen\Dense>
-#include <PAM.h>
-// #include <Engine\RTScene.h>
-// #include <Engine\Camera.h>
-#include <Base.h>
 
-#include <ctime>
-
-
+#include "default.h"
 
 
 #define PGM_FILE ".\\assets\\HiPgm.pgm"
@@ -93,5 +84,11 @@ int defaultRT(){
     std::cout << std::numeric_limits<unsigned char>::max();
     scene.Update();
     PPM::generateFromRaster(width,height,255,scene.GetRaster(width,height));
+    return 0;
+}
+
+int defaultRTFromFile(std::string f){
+    loadScene(f);
+
     return 0;
 }

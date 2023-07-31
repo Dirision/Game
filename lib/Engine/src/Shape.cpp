@@ -30,12 +30,14 @@ bool Shape::Sphere::intersect(const Ray &r, double &  t, Eigen::Vector3d &n){
     if (discrim == 0){
         t               = -B/bottom;
         n               = 2*(ec + t*r.direction);
+        n.normalize();
         return true; 
     } else { 
         double tA       = std::abs((-B - sqrt(discrim))/bottom);
         double tB       = (-B + sqrt(discrim))/bottom;
         tA <= tB ? t = tA : t = tB;
         n = 2*(ec + t*r.direction);
+        n.normalize();
         return true; 
     }
     // This should never be reached! 

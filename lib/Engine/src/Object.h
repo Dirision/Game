@@ -11,6 +11,8 @@ class Object{
     protected: 
        
     public:
+        std::string Name;
+
         virtual ~Object();
         std::shared_ptr<Material>       material; 
         // Need to take inspiration from old project function signatures

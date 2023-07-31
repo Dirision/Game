@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Game.dir/src/default.cpp.obj"
-  "CMakeFiles/Game.dir/src/main.cpp.obj"
+  "CMakeFiles/Game.dir/src/game.cpp.obj"
   "Game.pdb"
   "Game.exe"
   "Game.exe.manifest"

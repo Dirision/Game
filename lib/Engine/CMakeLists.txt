@@ -32,16 +32,21 @@ project(Engine DESCRIPTION "My Engine Library")
 # Include a library 
 #include_directories("C:\Users\dirision\Documents\GitHub\Game\include\Eigen3\Eigen3\Eigen")
 # We can include Eigen with the following (since it has a CMakeLists.txt), but because its not installed
-
+# C:/Users/dirision/Documents/GitHub/Game/lib/Engine/include/json/cmake
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake")
+set(nlohmann_json_DIR "${CMAKE_CURRENT_LIST_DIR}/include/json")
+set(JSON_INSTALL OFF CACHE INTERNAL "")
+add_subdirectory("${nlohmann_json_DIR}")
 
 include_directories($(CMAKE_CURRENT_SOURCE_DIR)/src)
 include_directories(${EIGEN3_INCLUDE_DIR})
-
+#include_directories(${nlohmann_json_DIR})
 
 # We had to use the FindEigen3.cmake that was in Eigen3's cmake folder, and copy it to our project's cmake folder. 
 # From Within that file, we added a hint to look at an environment variable ( EIGEN3_ROOT )
 find_package(Eigen3 3.3 REQUIRED)
+
+#find_package(nlohmann_json 3.11.2 REQUIRED)
 
 file(GLOB ENGINE_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp")
 
@@ -51,6 +56,8 @@ add_compile_options("$<$<NOT:$<CONFIG:RELEASE>>:-DDEBUG>")
 # Tells cmake that we want to build a library
 add_library(Engine SHARED ${ENGINE_SOURCE})
 
+# Link Json Parser
+target_link_libraries(Engine PRIVATE nlohmann_json::nlohmann_json)
 # add a debug lib
 #file(GLOB ENGINE_DEBUG_SOURCE CONFIGURE_DEPENDS "./src/*.h" "./src/*.cpp" "./srcDbg/*.h")
 #add_library(Engine_debug SHARED ${ENGINE_DEBUG_SOURCE})

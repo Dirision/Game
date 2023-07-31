@@ -1,0 +1,5 @@
+C:/Users/dirision/Documents/GitHub/Game/lib/Engine/build/CMakeFiles/Engine.dir
+C:/Users/dirision/Documents/GitHub/Game/lib/Engine/build/CMakeFiles/edit_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/lib/Engine/build/CMakeFiles/rebuild_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/lib/Engine/build/include/json/CMakeFiles/edit_cache.dir
+C:/Users/dirision/Documents/GitHub/Game/lib/Engine/build/include/json/CMakeFiles/rebuild_cache.dir

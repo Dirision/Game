@@ -23,7 +23,10 @@
 class RTScene
 {
 private:
-    
+
+    // Name of the scene (for management purposes) 
+    std::string Name;
+
     // std::vector<std::shared_ptr<Object>> objects;
     std::vector<std::shared_ptr<Object>> objects;
     Camera camera;
@@ -53,8 +56,10 @@ private:
 
 public:
     // Have a second constructor that initializes a camera if not provided? 
-    RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w);
-
+    //RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w);
+    RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w, std::string name);
+    RTScene(std::vector<std::shared_ptr<Object>> &o,Camera &c,const uint16_t h, const uint16_t w): 
+        RTScene(o,c,h,w, "NoName!"){};
     // update Raster matrix basesd on interactions between self camera & objects
     int Update();
 

@@ -56,19 +56,19 @@ include lib/Engine/CMakeFiles/Engine.dir/progress.make
 # Include the compile flags for this target's objects.
 include lib/Engine/CMakeFiles/Engine.dir/flags.make
 
-lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/flags.make
-lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
-lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj: ../lib/Engine/src/DebugFunction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj"
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Engine.dir\src\DebugFunction.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\DebugFunction.cpp
+lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/flags.make
+lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj: ../lib/Engine/src/EngineDebugFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Engine.dir\src\EngineDebugFunction.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\EngineDebugFunction.cpp
 
-lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/DebugFunction.cpp.i"
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\DebugFunction.cpp > CMakeFiles\Engine.dir\src\DebugFunction.cpp.i
+lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.i"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\EngineDebugFunction.cpp > CMakeFiles\Engine.dir\src\EngineDebugFunction.cpp.i
 
-lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/DebugFunction.cpp.s"
-	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\DebugFunction.cpp -o CMakeFiles\Engine.dir\src\DebugFunction.cpp.s
+lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.s"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\EngineDebugFunction.cpp -o CMakeFiles\Engine.dir\src\EngineDebugFunction.cpp.s
 
 lib/Engine/CMakeFiles/Engine.dir/src/Light.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/flags.make
 lib/Engine/CMakeFiles/Engine.dir/src/Light.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
@@ -112,10 +112,24 @@ lib/Engine/CMakeFiles/Engine.dir/src/RTScene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/RTScene.cpp.s"
 	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\RTScene.cpp -o CMakeFiles\Engine.dir\src\RTScene.cpp.s
 
+lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/flags.make
+lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
+lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj: ../lib/Engine/src/SceneBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Engine.dir\src\SceneBuilder.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\SceneBuilder.cpp
+
+lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Engine.dir/src/SceneBuilder.cpp.i"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\SceneBuilder.cpp > CMakeFiles\Engine.dir\src\SceneBuilder.cpp.i
+
+lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Engine.dir/src/SceneBuilder.cpp.s"
+	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\SceneBuilder.cpp -o CMakeFiles\Engine.dir\src\SceneBuilder.cpp.s
+
 lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/flags.make
 lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj: lib/Engine/CMakeFiles/Engine.dir/includes_CXX.rsp
 lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj: ../lib/Engine/src/Shape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj"
 	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Engine.dir\src\Shape.cpp.obj -c C:\Users\dirision\Documents\GitHub\Game\lib\Engine\src\Shape.cpp
 
 lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.i: cmake_force
@@ -128,25 +142,27 @@ lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.s: cmake_force
 
 # Object files for target Engine
 Engine_OBJECTS = \
-"CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj" \
+"CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj" \
 "CMakeFiles/Engine.dir/src/Light.cpp.obj" \
 "CMakeFiles/Engine.dir/src/Object.cpp.obj" \
 "CMakeFiles/Engine.dir/src/RTScene.cpp.obj" \
+"CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj" \
 "CMakeFiles/Engine.dir/src/Shape.cpp.obj"
 
 # External object files for target Engine
 Engine_EXTERNAL_OBJECTS =
 
-libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/DebugFunction.cpp.obj
+libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/EngineDebugFunction.cpp.obj
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/Light.cpp.obj
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/Object.cpp.obj
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/RTScene.cpp.obj
+libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/SceneBuilder.cpp.obj
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/src/Shape.cpp.obj
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/build.make
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/linklibs.rsp
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/objects1.rsp
 libEngine.dll: lib/Engine/CMakeFiles/Engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library ..\..\libEngine.dll"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\dirision\Documents\GitHub\Game\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX shared library ..\..\libEngine.dll"
 	cd /d C:\Users\dirision\Documents\GitHub\Game\build\lib\Engine && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Engine.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

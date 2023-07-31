@@ -1,0 +1,95 @@
+{
+    "Name" : "Sample Scene",
+    "Width" : 600,
+    "Height": 400,
+    "Objects" : [
+        {
+            "ObjectName" : "BlueTriangle",
+            "ObjectType" : "Triangle",
+            "Vertices" : [
+                {
+                "x" : 6,
+                "y" : 6,
+                "z" : 8
+                },
+                {
+                "x" : 3,
+                "y" : 4,
+                "z" : 7
+                },
+                {
+                "x" : 9,
+                "y" : 4,
+                "z" : 7
+                }
+            ]
+        },
+        {
+            "ObjectName" : "RedSphere",
+            "ObjectType" : "Sphere",
+            "Radius" : 2,
+            "Point" :
+            {
+                "x" : 0,
+                "y" : 2,
+                "z" : 10
+            },
+            "Material" :
+            {
+                "RGB":
+                {
+                    "r" : 200,
+                    "g" : 20,
+                    "b" : 20
+                }
+            }
+        },
+        {
+            "ObjectName" : "GreenPlane",
+            "ObjectType" : "Plane",
+            "Origin" : 
+            {
+                "x" : 0,
+                "y" : 0,
+                "z" : 0
+            },
+            "Normal" :
+            {
+                "x" : 0,
+                "y" : 1,
+                "z" : 0
+            }
+        }
+    ],
+    "Camera" : {
+        "Eye" : 
+        {
+            "x" : 0,
+            "y" : 1,
+            "z" : 3
+        },
+        "u" : 
+        {
+            "x" : 1,
+            "y" : 0,
+            "z" : 0
+        },
+        "v" : 
+        {
+            "x" : 0,
+            "y" : 1,
+            "z" : 0
+        },
+        "w" : 
+        {
+            "x" : 0,
+            "y" : 0,
+            "z" : 1
+        },
+        "Width" : 1.0,
+        "Height" : 1.0,
+        "FocalDistance" : 1.0,
+        "FoV" : 90
+    }
+
+}

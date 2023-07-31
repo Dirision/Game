@@ -5,7 +5,7 @@
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/dirision/Documents/GitHub/Game/./src/*.cpp")
 set(OLD_GLOB
   "C:/Users/dirision/Documents/GitHub/Game/./src/default.cpp"
-  "C:/Users/dirision/Documents/GitHub/Game/./src/main.cpp"
+  "C:/Users/dirision/Documents/GitHub/Game/./src/game.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -16,19 +16,21 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/dirision/Documents/GitHub/Game/./src/*.h")
 set(OLD_GLOB
   "C:/Users/dirision/Documents/GitHub/Game/./src/default.h"
+  "C:/Users/dirision/Documents/GitHub/Game/./src/game.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
   file(TOUCH_NOCREATE "C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/cmake.verify_globs")
 endif()
 
-# ENGINE_SOURCE at lib/Engine/CMakeLists.txt:46 (file)
+# ENGINE_SOURCE at lib/Engine/CMakeLists.txt:50 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/*.cpp")
 set(OLD_GLOB
-  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/DebugFunction.cpp"
+  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/EngineDebugFunction.cpp"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Light.cpp"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Object.cpp"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/RTScene.cpp"
+  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/SceneBuilder.cpp"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Shape.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -36,18 +38,19 @@ if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   file(TOUCH_NOCREATE "C:/Users/dirision/Documents/GitHub/Game/build/CMakeFiles/cmake.verify_globs")
 endif()
 
-# ENGINE_SOURCE at lib/Engine/CMakeLists.txt:46 (file)
+# ENGINE_SOURCE at lib/Engine/CMakeLists.txt:50 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/*.h")
 set(OLD_GLOB
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Base.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/BlinnPhongShading.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Camera.h"
-  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/DebugFunction.h"
+  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/EngineDebugFunction.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Light.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Material.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Object.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/RTScene.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Ray.h"
+  "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/SceneBuilder.h"
   "C:/Users/dirision/Documents/GitHub/Game/lib/Engine/./src/Shape.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
